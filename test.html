@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        First name:
+        <input type= "text" id="firstname" name="firstname"> <br> <br>
+        Last name: <input type= "text" id="lastname" name="lastname"> <br> <br> <br>
+        <input type = "button" onclick="showName()" value="submit">
+        <span id="show"></span>
+    </form>
+    <script>
+
+function showName(){
+    var firstName= document.getElementById("firstname").value;
+    var lastName = document.getElementById("lastname").value;
+    document.getElementById("show").innerText = firstName+" "+lastName;        
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="img/unnamed.png" alt="photo">
+        </div>
+        <div class="hello">
+            <h1>Hello user!</h1>
+        </div>
+        <div class="Enter">
+            <p>Enter Your Name to Continue the Quiz app</p>
+        </div>
+        <div class="inputform">
+            <form action="" method="" id="form">
+                <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME.">
+                <button type="submit" id="btu" onclick="return namedisplay(event)">ENTER</button>            </form>
+            <div class="You"><p>You have 10 seconds to answer each question</p></div>
+            <hr>
+            <div class="namedisplay" id="namedisplay"></div>
+            <div class="select3">
+                <h1>Select Category</h1>
+            </div>
+            <div class="select1">
+                <h3><a href="quizanswer.html">And Cisterns 1</a></h3>
+                <h3>Pipes And Cisterns 2</h3>
+            </div>
+            <div class="select2">
+                <h3>Pipes And Cisterns 3</h3>
+                <h3>Pipes And Cisterns 4</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        function namedisplay() {
+            const Name = document.querySelector('#name').value;
+            document.querySelector('#namedisplay').innerHTML = Name;
+            // event.preventDefault(); // Prevent form submission from reloading the page
+            return false;
+        }
+    </script>
+    
+     
+    
+    
+    
+     
+</body>
+</html>

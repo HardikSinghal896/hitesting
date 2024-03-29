@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizanwer.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="apptest"><p>Pipes and Cisterns</p></div>
+        <div class="appno">
+            <h3><span class="score">0</span></h3>
+            <h3 id="appno">tima:1</h3>
+        </div>
+        
+        <div class="quiz">
+            <h2 id="question">Question 1: What is the capital city of India?</h2>
+            <div class="answer-ques">
+                <button class="btn" onclick="checkAnswer(this)">Mumbai</button>
+                <button class="btn" onclick="checkAnswer(this)">Kolkata</button><br>
+                <button class="btn" onclick="checkAnswer(this)">Chennai</button>
+                <button class="btn" onclick="checkAnswer(this)">Delhi</button>
+            </div>
+            <button id="nextquestion" onclick="nextQuestion()">Next Question</button>
+        </div>
+    </div>
+    <div class="noto"><h3 id="progress">1/10</h3></div>
+
+    <script src="quizscript.js"></script>
+</body>
+</html>
